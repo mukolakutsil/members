@@ -1,7 +1,7 @@
 header {
     width: 100%;
     height: 100px;
-    background-color: aquamarine;
+    background-color: steelblue;
 
 }
 
@@ -9,10 +9,22 @@ header {
     display: flex;
     list-style-type: none;
     position: absolute;
-    left: 40%;
+    margin-left: 35%;
 }
 
 .li {
-    margin-right: 50%;
-    margin-top: 20%;
+    margin-right: 100%;
+    margin-top: 10%;
+    font-size: 20px;
+
+}
+
+.a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.active {
+    color: gold;
 }

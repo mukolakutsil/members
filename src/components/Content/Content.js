@@ -1,15 +1,16 @@
 import React from 'react';
-import List from './List/List';
+import { Route } from 'react-router-dom';
+import AddMember from './AddMember/AddMember';
 
 import style from './Content.module.css';
-import MemberInfo from './MemberInfo/MemberInfo';
+import MemberList from './MemberList/MemberList';
 
 const Content = (props) => {
     return (
         <>
-            <div className={style.contentWrapper}>
-            <List/>
-            <MemberInfo/>
+            <div className={style.wrapper}>
+            <Route exact path='/memberlist' component={MemberList}/>
+            <Route exact path='/addmember' component={AddMember}/>
             </div>
         </>
     )

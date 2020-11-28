@@ -1,0 +1,11 @@
+.wrapper {
+    grid-area: 1 / 1 / 2 / 2;
+    /* background-color: red; */
+    margin-left: 20px;
+
+}
+
+.img {
+    width: 205px;
+    margin-top: 27px;
+}
