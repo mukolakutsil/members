@@ -9,7 +9,7 @@ const Content = (props) => {
     return (
         <>
             <div className={style.wrapper}>
-            <Route exact path='/memberlist' component={MemberList}/>
+            <Route exact path='/memberlist' render={() => <MemberList state={props.state} />}/>
             <Route exact path='/addmember' component={AddMember}/>
             </div>
         </>

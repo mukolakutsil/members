@@ -11,7 +11,7 @@ const Info = (props) => {
     return (
         <div className={style.wrapper}>
             <MemberAvatar/>
-            <MemberDetails/>
+            <MemberDetails memberInfo={props.memberInfo}/>
             <div className={style.blockButton}>
                 <p>texttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
             </div>

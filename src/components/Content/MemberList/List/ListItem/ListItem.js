@@ -11,10 +11,8 @@ const ListItem = (props) => {
         <>
             <div className={style.wrapper}>
 
-                {members.map(m => {
-                    return <ul className={style.ul}>
-                        <li className={style.li}>{m}</li>
-                    </ul>
+                {props.members.map(m => {
+                    return <div key={m.id} className={style.item}>{m.name}</div>
                 })
                 }
 

@@ -8,13 +8,13 @@ const MemberDetails = (props) => {
         <>
             <div className={style.wrapper}>
             <p>ПІБ</p>
-            <p>Куціль Микола Ігорович</p>
+            <p>{props.memberInfo[0].name}</p>
             <p>Дата народження</p>
-            <p>22.12.2000</p>
+            <p>{props.memberInfo[0].birthdayDate}</p>
             <p>Місце проживання</p>
-            <p>с. Підріччя</p>
+            <p>{props.memberInfo[0].home}</p>
             <p>Дата працевлаштування</p>
-            <p>12.05.2019</p>
+            <p>{props.memberInfo[0].workDate}</p>
             </div>
         </>
     )

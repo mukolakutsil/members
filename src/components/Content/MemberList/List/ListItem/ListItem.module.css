@@ -1,8 +1,8 @@
 .wrapper{
-    margin-left: 30%;
+    text-align: center;
 }
 
-.li{
-    list-style-type: none;
+.item{
     margin-bottom: 20px;
+    margin-top: 10px;
 }

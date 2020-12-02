@@ -9,8 +9,8 @@ const MemberList = (props) => {
     return (
         <>
             <div className={style.wrapper}>
-            <List/>
-            <Info/>
+            <List members={props.state.members}/>
+            <Info memberInfo={props.state.memberInfo}/>
             </div>
         </>
     )

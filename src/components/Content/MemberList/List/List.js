@@ -8,7 +8,7 @@ const List = (props) => {
     return (
         <>
         <div className={style.wrapper}>
-            <ListItem/>
+            <ListItem members={props.members}/>
         </div>
         </>
     )
