@@ -1,11 +1,9 @@
 import React from 'react';
 
-import style from './AddMember.module.css';
-import MemberFormLeft from './MemberFormLeft/MemberFormLeft';
-import MemberFormRight from './MemberFormRight/MemberFormRight';
+import style from './MemberFormRight.module.css';
 
 
-const AddMember = (props) => {
+const MemberFormRight = (props) => {
 
     // let memberName = React.createRef();
 
@@ -21,11 +19,13 @@ const AddMember = (props) => {
     return (
         <>
             <div className={style.wrapper}>
-               <MemberFormLeft updateNewMemberName={props.updateNewMemberName}  addMember={props.addMember} addNewMemberName={props.addNewMemberName}/>
-             <MemberFormRight/>
+                <h1>Заповніть анкету для нового ментора</h1>
+                {/* <input onChange={onNameChange} ref={memberName} value={props.addMember.memberName} />
+                <button onClick={addNewMember}>add</button> */}
+
             </div>
         </>
     )
 };
 
-export default AddMember;
+export default MemberFormRight;

@@ -1,4 +1,7 @@
-import { rerenderEntireTree } from "./render";
+let rerenderEntireTree = () => {
+   console.log("Hello!");
+};
+
 
 let state = {
     memberList: {
@@ -32,5 +35,9 @@ export let updateNewMemberName = (newName) => {
     state.addMember.memberName = newName;
     rerenderEntireTree(state);
 };
+
+export const subscribe = (observer) => {
+    rerenderEntireTree = observer
+}; 
 
 export default state;
