@@ -6,7 +6,7 @@ function App(props) {
   return (
     <>
       <Header />
-      <Content state={props.state} />
+      <Content state={props.state} updateNewMemberName={props.updateNewMemberName} addNewMemberName={props.addNewMemberName} />
     </>
   );
 }
