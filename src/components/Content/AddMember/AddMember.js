@@ -21,7 +21,7 @@ const AddMember = (props) => {
     return (
         <>
             <div className={style.wrapper}>
-               <MemberFormLeft updateNewMemberName={props.updateNewMemberName}  addMember={props.addMember} addNewMemberName={props.addNewMemberName}/>
+               <MemberFormLeft addMember={props.addMember} dispatch={props.dispatch}/>
              <MemberFormRight/>
             </div>
         </>

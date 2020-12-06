@@ -14,7 +14,7 @@ const MemberFormLeft = (props) => {
     return (
         <div className={style.wrapper}>
 
-            <FormName updateNewMemberName={props.updateNewMemberName} addMember={props.addMember} addNewMemberName={props.addNewMemberName} />
+            <FormName dispatch={props.dispatch} addMember={props.addMember} />
             <FormBirthdayDate />
             <FormHome />
             <FormWorkDate />

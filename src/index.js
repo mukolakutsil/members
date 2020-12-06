@@ -1,23 +1,22 @@
 import ReactDOM from 'react-dom';
-import state, {subscribe} from './state';
+import store from './store';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import { addNewMemberName, updateNewMemberName } from './state.js';
 
 
 let rerenderEntireTree = (state) => {
-  ReactDOM.render(
-    <>
-      <BrowserRouter >
-        <App state={state} updateNewMemberName={updateNewMemberName} addNewMemberName={addNewMemberName} />
-      </BrowserRouter>
-    </>,
-    document.getElementById('root')
-  );
+    ReactDOM.render(
+        <>
+            <BrowserRouter >
+                <App state={store.getState()} dispatch={store.dispatch.bind(store)} />
+            </BrowserRouter>
+        </>,
+        document.getElementById('root')
+    );
 };
 
-rerenderEntireTree(state);
+rerenderEntireTree(store.getState());
 
-subscribe(rerenderEntireTree);
+store.subscribe(rerenderEntireTree);
 
